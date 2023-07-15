@@ -23,10 +23,13 @@ namespace Algorithms.Tests
     [TestMethod]
     public void Calculate_ReturnTwoHighestValuesOfArg1_ArrayOfEightAndTen() {
       // Arrange
+      int[] test = new int[4] { 1, 2, 10, 8 };
 
       // Act
+      int[] result = TwoOldestAges.Calculate(test);
 
       // Assert
+      CollectionAssert.AreEqual(result, new int[] { 8, 10 });
     }
   }
 }

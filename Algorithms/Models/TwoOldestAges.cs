@@ -7,7 +7,8 @@
 // [1, 2, 10, 8] --> [8, 10]
 // [1, 5, 87, 45, 8, 8] --> [45, 87]
 // [1, 3, 10, 0]) --> [3, 10]
-
+using System;
+using System.Linq;
 
 namespace Algorithms.Models
 {
@@ -16,14 +17,17 @@ namespace Algorithms.Models
     // take int[] arg1 as param to Calculate()
     public static int[] Calculate(int[] arg1)
     {      
-      // (use Array.Sort?)
-      // declare sortedArray and assign to Array.Sorted(arg1) 
-      // declare result and during instantiation, assign index 1 
+      // use arg1.OrderBy(x => x) where x is saying order by arg1's own items
+      // note: OrderBy is a LINQ method that returns an IOrderedEnumerable<T> object
+      // thus we need to convert the return to an array using ToArray()
+      int[] sortedArray = arg1.OrderBy(x => x).ToArray();
+
+      // declare result and during instantiation, assign index 1
       // sortedArray[sortedArray.Length - 2] and index 2 sortedArray[sortedArray.Length - 1]  
+      int[] result = new int[2] { sortedArray[sortedArray.Length - 2], sortedArray[sortedArray.Length - 1] };
 
       // return int[] result containing two highest nums from arg1[], from lowest to highest
-
-      return new int[] { 1, 2 };
+      return result;
     }
   }
 }
