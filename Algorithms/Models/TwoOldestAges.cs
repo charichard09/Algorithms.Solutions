@@ -16,7 +16,10 @@ namespace Algorithms.Models
     // take int[] arg1 as param to Calculate()
     public static int[] Calculate(int[] arg1)
     {      
-      // (use Array.Sort?) 
+      // (use Array.Sort?)
+      // declare sortedArray and assign to Array.Sorted(arg1) 
+      // declare result and during instantiation, assign index 1 
+      // sortedArray[sortedArray.Length - 2] and index 2 sortedArray[sortedArray.Length - 1]  
 
       // return int[] result containing two highest nums from arg1[], from lowest to highest
 

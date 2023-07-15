@@ -19,5 +19,14 @@ namespace Algorithms.Tests
       // Assert
       Assert.AreEqual(result.Length, 2);
     }
+
+    [TestMethod]
+    public void Calculate_ReturnTwoHighestValuesOfArg1_ArrayOfEightAndTen() {
+      // Arrange
+
+      // Act
+
+      // Assert
+    }
   }
 }
