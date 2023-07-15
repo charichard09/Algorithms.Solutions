@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName.Models;
+using Algorithms.Models;
 
-namespace ProjectName.Tests
+namespace Algorithms.Tests
 {
   [TestClass]
   public class ClassNameTests

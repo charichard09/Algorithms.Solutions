@@ -1,7 +1,7 @@
-using ProjectName.Models;
+using Algorithms.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ProjectName.Controllers
+namespace Algorithms.Controllers
 {
   public class HomeController : Controller
   {

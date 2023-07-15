@@ -1,4 +1,4 @@
-namespace ProjectName.Models
+namespace Algorithms.Models
 {
   public class ClassName
   {
