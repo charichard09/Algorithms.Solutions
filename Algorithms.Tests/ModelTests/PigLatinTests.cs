@@ -7,13 +7,13 @@ namespace Algorithms.Tests;
 public class PigLatinTests
 {
   [TestMethod]
-  public void Calculate_WhenInputIsEmpty_Empty()
+  public void Calculate_WhenInputIsString_StringPlusAY()
   {
     // Arrange
-    string result = PigLatin.Calculate("");
+    string result = PigLatin.Calculate("Hello World!");
     // Act
 
     // Assert
-    Assert.AreEqual(result, "");
+    Assert.AreEqual(result, "elloHay orldWay!");
   }
 }
