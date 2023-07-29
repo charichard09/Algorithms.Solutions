@@ -9,7 +9,6 @@
 // output => "elloHay orldWay!"
 using System.Linq;
 
-
 namespace Algorithms.Models;
 
 public class PigLatin
